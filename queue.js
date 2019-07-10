@@ -1,4 +1,15 @@
 // fila Queue 
+// caracterizada por ser una secuencia de elementos en la que la operacion 
+// de insercion (enqueue) se realiza por un extremo y la operacion de extraccion
+// (dequeue) por el otro 
+// FIFO
+// [  ]constructor
+// [  ]enqueue
+// [  ]dequeue
+// [  ]getSize
+// [  ]isEmpty
+// [  ]peek
+// [  ]print
 
 class Queue{
     constructor(){
@@ -46,7 +57,7 @@ class Queue{
             return null;
         }
         let result = '';
-        for(let i = this.front;i < this.end ; i++){
+        for(let i = this.front; i < this.end; i++){
             result += this.item[i] + " ";
         }
         return result;
