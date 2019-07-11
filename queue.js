@@ -3,13 +3,13 @@
 // de insercion (enqueue) se realiza por un extremo y la operacion de extraccion
 // (dequeue) por el otro 
 // FIFO
-// [  ]constructor
-// [  ]enqueue
-// [  ]dequeue
-// [  ]getSize
-// [  ]isEmpty
-// [  ]peek
-// [  ]print
+// [ ]constructor
+// [ ]enqueue
+// [ ]dequeue
+// [ ]getSize
+// [ ]isEmpty
+// [ ]peek
+// [ ]print
 
 class Queue{
     constructor(){

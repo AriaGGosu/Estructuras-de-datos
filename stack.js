@@ -3,23 +3,25 @@
 // almacenar y recuperar datos, 
 // el modo de acceso a sus elementos es de tipo 
 // LIFO
-// [  ]constructor
-// [  ]push
-// [  ]pop
-// [  ]getSize
-// [  ]isEmpty
-// [  ]peek
-// [  ]print
+// [ ]constructor
+// [ ]push
+// [ ]pop
+// [ ]getSize
+// [ ]isEmpty
+// [ ]peek
+// [ ]print
 
 class stack {
     constructor(){
         this.item = {};
-        this.top = 0 ;
+        this.top = 0;
     };
+    // agregar data a la pila
     push(data){
         this.top++;
         this.item[this.top] = data;
     };
+    // borrar el ultimo elemento de la pila 
     pop(){
         let deletedData;
         if(this.top){
@@ -77,5 +79,6 @@ console.log(stacks.isEmpty());
 
 // devolver el objeto mas arriba de la pila
 console.log(stacks.peek());
+
 
 console.log(stacks.print());

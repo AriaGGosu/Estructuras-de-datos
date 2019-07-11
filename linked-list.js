@@ -89,7 +89,8 @@ class linkedList{
                 this.size--;
                 return current.data;
             }
-            return null;
+            previous = current;
+            current = current.next;
         }
     }
     // remover un nodo de un indice especifico
@@ -162,6 +163,9 @@ const linkedlist = new linkedList();
 // agregar nuevo nodo al final de la lista
 linkedlist.add(12);
 linkedlist.add(40);
+
+// remover valor especifico
+linkedlist.removeData(12);
 
 // agregar nuevo nodo en indice especifico
 linkedlist.insertAt(19,1);
