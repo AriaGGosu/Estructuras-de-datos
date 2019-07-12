@@ -3,9 +3,9 @@
 // [x]add
 // [x]inserAt
 // [x]removeFrom
-// [ ]removeElement
-// [ ]isEmpty
-// [ ]peek
+// [x]removeElement
+// [x]isEmpty
+// [x]peek
 // [ ]print
 
 class node{
@@ -90,18 +90,71 @@ class linkedList{
     //         current = current.next;
     //     }
     // }
+    // removeElement(data){
+    //     let current = this.head;
+    //     let previous = null;
 
+    //     while(current != null){
+    //         if(current.data === data){
+    //             if(!previous){
+    //                 this.head = current.next;
+    //             }else{
+    //                 previous.next = current.next;
+    //             }
+    //             this.size--;
+    //             return current.data;
+    //         }
+    //         previous = current;
+    //         current = current.next;
+    //     }
+    // }
+    removeElement(data){
+        let current = this.head;
+        let previous = null;
+        while(current !=null){
+            if(current.data === data){
+                if(!previous){
+                    this.head = current.next;
+                }else{
+                    previous.next = current.next;
+                }
+                this.size--;
+                return current.data;
+            }
+            previous = current;
+            current = current.next;
+        }
+    }
+    isEmpty(){
+        return this.size === 0;
+    }
+    peek(){
+        return this.head.data;
+    }
+    print(){
+        let current = this.head;
+        let result='';
+        for(let i = 0; i < this.size; i++){
+            result += current.data + "->";
+            current = current.next;
+        }
+        result += "x";
+        return result;
+    }
 
 }
 
 const nuevaLista = new linkedList();
 nuevaLista.add(12);
 nuevaLista.add(23);
+nuevaLista.add(62);
+nuevaLista.add(36);
+
 nuevaLista.insertAt(19,1);
 nuevaLista.removeFrom(0);
-nuevaLista.removeElement(19);
+nuevaLista.removeElement(23);
 console.log(nuevaLista);
-
-
-
+console.log(nuevaLista.isEmpty());
+console.log(nuevaLista.peek());
+console.log(nuevaLista.print());
 

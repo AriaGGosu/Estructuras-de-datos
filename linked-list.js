@@ -9,7 +9,7 @@
 // [  ]removeFrom
 // [  ]removeElement
 // [  ]isEmpty
-// [  ]peek
+// [  ]getSize
 // [  ]print
 
 class node {
