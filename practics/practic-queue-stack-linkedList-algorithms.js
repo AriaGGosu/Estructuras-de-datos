@@ -251,6 +251,8 @@ class linkedList{
                 result = current.data + "->";
                 current = current.next;
             }
+            result += "x";
+            return result;
         }
     }
 }
