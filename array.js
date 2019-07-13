@@ -24,7 +24,7 @@ const Array = [
     { name:"hector",age: 27, occupation: "pro-player", end: 2010 },
     { name:"jean",age: 28, occupation: "frontend developer", end: 2022 },
     { name:"seba",age: 32, occupation: "senior developer", end: 2054 },
-    { name:"felipe",age: 29, occupation: "enigma digital", end: 1990 },
+    { name:"felipe",age: 29, occupation: "frontend developer", end: 1990 },
 ];
 
 // traer los nombres de todas las personas con edad mayor a 28
@@ -63,6 +63,7 @@ for(let i = 0; i < Array.length; i++){
     const people = Array[i];
     if(people.occupation === "frontend developer"){
         frontend = people;
+        break;
     }
 }
 console.log(frontend);
