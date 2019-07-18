@@ -192,3 +192,4 @@ for(var {family} of people){
 
 console.log(newArray);
 console.log(familyArray);
+
