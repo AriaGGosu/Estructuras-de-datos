@@ -79,7 +79,6 @@ console.log(queue);
 // obtener el primer valor de la fila , sacandolo de la fila 
 console.log(queue.dequeue());
 console.log(queue.dequeue());
-console.log(queue.dequeue());
 
 // mostrar el tamaño de la fila 
 console.log(queue.getSize());
